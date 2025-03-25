@@ -1,0 +1,79 @@
+* {
+  font-family: "Roboto", sans-serif, "Times New Roman";
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: oklch(0.968 0.007 247.896);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  background-color: oklch(0.208 0.042 265.755);
+  color: oklch(0.984 0.003 247.858);
+}
+
+header {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: right;
+}
+
+.logo-name {
+  font-family: "Roboto Slab", sans-serif, "Times New Roman";
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+main {
+  flex: 1 1 auto;
+  padding: 10px 100px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-size: 15px;
+}
+
+.box-design {
+  background-color: oklch(0.929 0.013 255.508);
+  border: solid oklch(0.554 0.046 257.417) 3px;
+  border-radius: 20px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+}
+
+.entry-parameters {
+  display: flex;
+  flex-direction: column;
+}
+
+.beam-figure {
+  padding: 30px;
+  border: solid;
+}
+
+.lower-box {
+  background-color: green;
+  height: 100px;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+}

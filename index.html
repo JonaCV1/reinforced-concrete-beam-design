@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseño viga HA - ACI318-08</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-name">V<sup>3</sup> Engineers</div>
+    </header>
+    <main>
+      <div class="main-title">
+        <h1>Diseño de viga a flexión y corte según ACI318-08</h1>
+      </div>
+
+      <div class="box-design">
+        <div class="upper-box">
+          <div class="entry-parameters">
+            <h2>Parámetros de entrada</h2>
+
+            <h3>Propiedades mecánicas</h3>
+            <div class="hormigon">
+              <label for="grado-hormigon">Grado hormigón:</label>
+              <select name="grado-hormigon" id="grado-hormigon">
+                <option value="17">G17</option>
+                <option value="20">G20</option>
+                <option value="25">G25</option>
+                <option value="30">G30</option>
+              </select>
+            </div>
+
+            <div class="acero">
+              <label for="calidad-acero">Calidad acero de refuerzo:</label>
+              <select name="calidad-acero" id="calidad-acero">
+                <option value="420">A63-42H</option>
+              </select>
+            </div>
+
+            <div class="tipo-corte">
+              <label for="phi-corte">&#x3C6; de corte:</label>
+              <select name="phi-corte" id="phi-corte">
+                <option value="0.6">0.60</option>
+                <option value="0.75">0.75</option>
+              </select>
+            </div>
+          </div>
+          <div class="beam-figure">
+            <img
+              src="img/viga-ha.png"
+              alt="Esquema sección transversal viga de hormigón armado"
+            />
+          </div>
+        </div>
+        <div class="lower-box"></div>
+      </div>
+    </main>
+    <footer>Desarrollado por Jonathan Cortés V.</footer>
+  </body>
+</html>
